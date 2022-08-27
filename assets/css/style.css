@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
   width: 100%;
+  box-sizing: border-box;
 }
 
 textarea{
@@ -38,9 +39,11 @@ textarea{
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  margin-right: -15px;
+  padding-top: 15px;
+  text-align: right;
+  border-top: 1px solid grey;
+  border-right: 2px solid grey;
 }
 
 .past {
@@ -59,6 +62,8 @@ textarea{
 }
 
 .saveBtn {
+  padding: 26px;
+  margin-left: -30px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -69,8 +74,4 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-
-textarea {
-  resize: none;
 }
